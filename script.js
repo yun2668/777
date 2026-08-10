@@ -22,7 +22,7 @@ if (menuBtn && mainNav) {
   });
 
 
-  // 點擊選單項目後，自動收合
+  // 點選選單後，自動收合
   mainNav.querySelectorAll("a").forEach(link => {
 
     link.addEventListener("click", () => {
@@ -64,7 +64,7 @@ if (menuBtn && mainNav) {
 
 
 // ==========================================
-// 常見問題 FAQ
+// 常見問題 FAQ 展開 / 收合
 // ==========================================
 
 document.querySelectorAll(".faq-item").forEach(item => {
@@ -73,6 +73,7 @@ document.querySelectorAll(".faq-item").forEach(item => {
     item.querySelector(".faq-question");
 
 
+  // 找不到 FAQ 按鈕就跳過
   if (!button) return;
 
 
@@ -82,7 +83,7 @@ document.querySelectorAll(".faq-item").forEach(item => {
       item.classList.contains("active");
 
 
-    // 先關閉全部 FAQ
+    // 先把全部 FAQ 關閉
     document
       .querySelectorAll(".faq-item")
       .forEach(otherItem => {
@@ -92,8 +93,7 @@ document.querySelectorAll(".faq-item").forEach(item => {
       });
 
 
-    // 如果目前這題原本沒有打開
-    // 就開啟目前這一題
+    // 如果目前這一題原本沒開，就打開
     if (!isOpen) {
 
       item.classList.add("active");
@@ -103,3 +103,132 @@ document.querySelectorAll(".faq-item").forEach(item => {
   });
 
 });
+
+
+
+// ==========================================
+// 官方統計數字跳動動畫
+// ==========================================
+
+const counters =
+  document.querySelectorAll(".count");
+
+
+function animateCounter(element) {
+
+  const target =
+    Number(element.dataset.target || 0);
+
+
+  // 沒有設定數字就停止
+  if (!target) return;
+
+
+  const duration = 1100;
+
+  const start =
+    performance.now();
+
+
+  function update(now) {
+
+    const progress =
+      Math.min(
+        (now - start) / duration,
+        1
+      );
+
+
+    // 讓動畫開始慢、後面變快再慢下來
+    const eased =
+      1 - Math.pow(
+        1 - progress,
+        3
+      );
+
+
+    const currentValue =
+      Math.floor(
+        target * eased
+      );
+
+
+    element.textContent =
+      currentValue.toLocaleString("zh-TW");
+
+
+    // 尚未完成就繼續動畫
+    if (progress < 1) {
+
+      requestAnimationFrame(update);
+
+    }
+
+  }
+
+
+  requestAnimationFrame(update);
+
+}
+
+
+
+// ==========================================
+// 滑到數據區時才開始跳數字
+// ==========================================
+
+if ("IntersectionObserver" in window) {
+
+  const observer =
+    new IntersectionObserver(
+
+      entries => {
+
+        entries.forEach(entry => {
+
+          if (
+            entry.isIntersecting &&
+            !entry.target.dataset.animated
+          ) {
+
+            entry.target.dataset.animated =
+              "true";
+
+
+            animateCounter(
+              entry.target
+            );
+
+          }
+
+        });
+
+      },
+
+      {
+        threshold: 0.4
+      }
+
+    );
+
+
+  counters.forEach(counter => {
+
+    observer.observe(counter);
+
+  });
+
+}
+
+
+// 舊版瀏覽器不支援 IntersectionObserver
+// 就直接顯示動畫
+else {
+
+  counters.forEach(counter => {
+
+    animateCounter(counter);
+
+  });
+
+}

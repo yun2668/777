@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="新北市噪音防制資訊專區：用Q版圖解說明交通、施工、鄰里與設備噪音、分貝概念及陳情方式。">
+  <title>新北市噪音防制資訊專區</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">跳到主要內容</a>
+
+<header class="header" id="home">
+  <div class="wrap nav">
+    <a class="brand" href="#home">
+      <span class="brand-bubble">🔊</span>
+      <span><b>新北市噪音防制資訊專區</b><small>Noise Control · Easy Guide</small></span>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false">☰</button>
+    <nav id="navMenu">
+      <a href="#easy">先看重點</a>
+      <a href="#sources">常見噪音</a>
+      <a href="#db">分貝怎麼看</a>
+      <a href="#rules">管制提醒</a>
+      <a href="#complaint">我要陳情</a>
+      <a href="#faq">常見問題</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="hero">
+  <div class="hero-cloud cloud-a"></div>
+  <div class="hero-cloud cloud-b"></div>
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <span class="pill">NEW TAIPEI · QUIET CITY</span>
+      <h1>噪音少一點，<br><em>生活舒服多一點。</em></h1>
+      <p>施工、車輛、擴音設備、冷氣機或鄰里聲響，都可能影響生活安寧。這一頁用 Q 版圖解幫你快速判斷「這是什麼噪音、什麼時段要注意、遇到問題怎麼反映」。</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#easy">30 秒看懂噪音防制</a>
+        <a class="btn white" href="#complaint">我要反映噪音</a>
+      </div>
+      <div class="hero-note"><span></span><b>晚上 10 點～翌日上午 8 點</b>，部分噪音行為有更嚴格限制。</div>
+    </div>
+
+    <div class="hero-art" aria-label="Q版城市噪音來源插畫">
+      <svg viewBox="0 0 760 560" role="img" aria-label="Q版新北城市中交通、施工與住宅噪音插畫">
+        <defs>
+          <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#DFF3FA"/><stop offset="1" stop-color="#F6FCF8"/></linearGradient>
+          <filter id="sh"><feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#174d56" flood-opacity=".14"/></filter>
+        </defs>
+        <rect x="20" y="18" width="720" height="500" rx="60" fill="url(#sky)"/>
+        <circle cx="635" cy="92" r="50" fill="#FFE39A"/>
+        <g fill="#fff"><ellipse cx="105" cy="87" rx="50" ry="23"/><ellipse cx="145" cy="91" rx="37" ry="20"/><ellipse cx="128" cy="68" rx="31" ry="28"/></g>
+        <path d="M20 380C173 326 301 366 420 335C543 304 637 328 740 292V518H20Z" fill="#B9E2B4"/>
+
+        <!-- buildings -->
+        <g filter="url(#sh)">
+          <rect x="75" y="224" width="100" height="170" rx="10" fill="#EAF3F5"/>
+          <rect x="185" y="168" width="116" height="226" rx="10" fill="#CFE7EC"/>
+          <rect x="515" y="190" width="98" height="204" rx="10" fill="#EAF3F5"/>
+          <rect x="625" y="245" width="72" height="149" rx="10" fill="#D1E8EC"/>
+        </g>
+        <g fill="#91C5D2"><rect x="208" y="196" width="20" height="28" rx="4"/><rect x="249" y="196" width="20" height="28" rx="4"/><rect x="208" y="244" width="20" height="28" rx="4"/><rect x="249" y="244" width="20" height="28" rx="4"/></g>
+
+        <!-- construction -->
+        <g transform="translate(350 180)" filter="url(#sh)">
+          <rect x="0" y="105" width="130" height="82" rx="13" fill="#F2C54D"/>
+          <rect x="28" y="67" width="70" height="55" rx="8" fill="#FFDA7A"/>
+          <circle cx="30" cy="188" r="25" fill="#173E48"/><circle cx="30" cy="188" r="10" fill="#BFD8D2"/>
+          <circle cx="104" cy="188" r="25" fill="#173E48"/><circle cx="104" cy="188" r="10" fill="#BFD8D2"/>
+          <path d="M106 102L164 33L212 33" stroke="#173E48" stroke-width="12" stroke-linecap="round"/>
+          <path d="M210 33L230 103" stroke="#173E48" stroke-width="12" stroke-linecap="round"/>
+          <path d="M224 99l32 0-15 36z" fill="#E99A31"/>
+          <path d="M249 132c31 8 43 24 55 47" stroke="#F09A46" stroke-width="8" fill="none" stroke-linecap="round" stroke-dasharray="8 9"/>
+        </g>
+
+        <!-- car -->
+        <g transform="translate(80 380)" filter="url(#sh)">
+          <circle cx="52" cy="75" r="28" fill="#173E48"/><circle cx="52" cy="75" r="11" fill="#BFD8D2"/>
+          <circle cx="190" cy="75" r="28" fill="#173E48"/><circle cx="190" cy="75" r="11" fill="#BFD8D2"/>
+          <path d="M33 57L68 19H155L184 57H215C229 57 240 68 240 82V91H12V80C12 67 20 57 33 57Z" fill="#F1884B"/>
+          <path d="M80 28H147L169 55H56Z" fill="#DFF3FA"/>
+          <circle cx="110" cy="64" r="5" fill="#173E48"/><circle cx="130" cy="64" r="5" fill="#173E48"/>
+          <path d="M113 75c5 5 10 5 15 0" stroke="#168B78" stroke-width="4" fill="none" stroke-linecap="round"/>
+          <path d="M240 35c25-14 43-8 55 3M245 49c28-6 45 3 55 14" stroke="#E65D4A" stroke-width="7" fill="none" stroke-linecap="round"/>
+        </g>
+
+        <!-- home + resident -->
+        <g transform="translate(512 335)" filter="url(#sh)">
+          <path d="M0 76L78 8L156 76V175H0Z" fill="#fff"/>
+          <path d="M-12 78L78 0L168 78" stroke="#4AA890" stroke-width="17" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="62" y="105" width="38" height="70" rx="6" fill="#D9E8E7"/>
+          <rect x="16" y="92" width="34" height="33" rx="5" fill="#CFE8F0"/>
+        </g>
+
+        <!-- sound mascot -->
+        <g transform="translate(278 55)" filter="url(#sh)">
+          <path d="M44 90C18 90 2 73 8 52C13 34 29 26 47 29C50 11 64 0 83 0C104 0 118 13 121 32C139 28 157 39 161 57C166 76 151 90 130 90H44Z" fill="#fff" stroke="#C7E5DE" stroke-width="3"/>
+          <circle cx="63" cy="56" r="5" fill="#173E48"/><circle cx="103" cy="56" r="5" fill="#173E48"/>
+          <path d="M72 69c7 7 15 7 22 0" stroke="#168B78" stroke-width="4" fill="none" stroke-linecap="round"/>
+          <path d="M151 38c19-11 32-4 41 6M153 55c20-3 32 6 37 14" stroke="#F2A23A" stroke-width="6" fill="none" stroke-linecap="round"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section class="quick" id="easy">
+  <div class="wrap">
+    <div class="title center"><span>先看這裡</span><h2>遇到噪音，先分成 4 種</h2><p>不同噪音來源，適用的規定與處理方式可能不同。</p></div>
+    <div class="quick-grid">
+      <article><div class="qicon car">🚗</div><h3>交通噪音</h3><p>汽機車排氣管、道路交通、軌道及航空等。</p><b>先確認來源與發生地點</b></article>
+      <article><div class="qicon work">🏗️</div><h3>施工噪音</h3><p>營建、裝修、鑽孔、切割或機具作業。</p><b>記下施工時間最重要</b></article>
+      <article><div class="qicon home">🏠</div><h3>鄰里／生活噪音</h3><p>住宅、卡拉 OK、寵物、家用設備等。</p><b>有些屬近鄰噪音案件</b></article>
+      <article><div class="qicon machine">⚙️</div><h3>固定設備噪音</h3><p>冷氣、冷卻水塔、馬達、抽風機、發電機等。</p><b>可依管制標準量測判定</b></article>
+    </div>
+  </div>
+</section>
+
+<section class="sources" id="sources">
+  <div class="wrap">
+    <div class="title"><span>常見噪音來源</span><h2>生活中，哪些聲音最容易造成困擾？</h2><p>不是「有聲音」就一定違規；是否超過標準、時間、地區與行為類型都會影響判定。</p></div>
+    <div class="noise-scenes">
+      <article class="scene">
+        <svg viewBox="0 0 320 190" aria-label="Q版汽機車噪音">
+          <rect width="320" height="190" rx="22" fill="#EAF6FB"/>
+          <circle cx="55" cy="143" r="27" fill="#173E48"/><circle cx="55" cy="143" r="11" fill="#C5DDD7"/>
+          <circle cx="220" cy="143" r="27" fill="#173E48"/><circle cx="220" cy="143" r="11" fill="#C5DDD7"/>
+          <path d="M40 123L74 79H181L212 123H250C264 123 275 134 275 148V158H20V146C20 133 28 123 40 123Z" fill="#F1874C"/>
+          <path d="M87 88H171L195 120H63Z" fill="#D8F0F6"/>
+          <path d="M266 77c18-11 32-7 43 3M267 96c21-4 34 4 43 15" stroke="#DB5B4A" stroke-width="7" fill="none" stroke-linecap="round"/>
+        </svg>
+        <div><span>交通</span><h3>改裝排氣管／道路車流</h3><p>車輛排氣管若未經審驗或檢驗合格，可能涉及噪音管制規定。</p></div>
+      </article>
+
+      <article class="scene">
+        <svg viewBox="0 0 320 190" aria-label="Q版施工噪音">
+          <rect width="320" height="190" rx="22" fill="#FFF5DE"/>
+          <rect x="49" y="104" width="130" height="64" rx="12" fill="#F1C74F"/>
+          <rect x="75" y="74" width="66" height="46" rx="8" fill="#FFDA7B"/>
+          <circle cx="75" cy="169" r="22" fill="#173E48"/><circle cx="75" cy="169" r="9" fill="#C5DDD7"/>
+          <circle cx="156" cy="169" r="22" fill="#173E48"/><circle cx="156" cy="169" r="9" fill="#C5DDD7"/>
+          <path d="M181 110L236 44H286" stroke="#173E48" stroke-width="11" stroke-linecap="round"/>
+          <path d="M282 45l18 55" stroke="#173E48" stroke-width="11" stroke-linecap="round"/>
+          <path d="M246 129c30 4 45 20 55 39" stroke="#E79A32" stroke-width="7" fill="none" stroke-linecap="round" stroke-dasharray="8 8"/>
+        </svg>
+        <div><span>施工</span><h3>營建／裝修機具</h3><p>鑽孔、切割、破碎及重機具可能造成高噪音，夜間更需注意管制規定。</p></div>
+      </article>
+
+      <article class="scene">
+        <svg viewBox="0 0 320 190" aria-label="Q版住宅設備噪音">
+          <rect width="320" height="190" rx="22" fill="#EEF8F3"/>
+          <path d="M65 92L160 27L255 92V170H65Z" fill="#fff"/>
+          <path d="M48 94L160 17L272 94" stroke="#4BA88F" stroke-width="15" fill="none" stroke-linecap="round"/>
+          <rect x="95" y="103" width="60" height="38" rx="8" fill="#CDE5EB"/>
+          <rect x="181" y="103" width="48" height="48" rx="7" fill="#D8E6E3"/>
+          <circle cx="205" cy="127" r="16" fill="none" stroke="#6F898D" stroke-width="5"/>
+          <path d="M230 90c23-10 38-2 46 9M233 111c24-1 37 9 42 20" stroke="#E9903B" stroke-width="7" fill="none" stroke-linecap="round"/>
+        </svg>
+        <div><span>設備</span><h3>冷氣／馬達／抽風設備</h3><p>空調、冷卻水塔、抽水馬達、抽排風機、發電機等都有相關噪音標準。</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="db-section" id="db">
+  <div class="wrap db-grid">
+    <div class="db-copy">
+      <div class="title"><span>分貝怎麼看？</span><h2>分貝不是「越大一點，只吵一點點」</h2></div>
+      <p>分貝（dB）是聲音強度的表示方式。生活中的聲音差異很大，是否造成健康或生活影響，也和持續時間有關。</p>
+      <div class="db-note">以下為民眾理解用的常見情境範例，正式管制與判定仍須依噪音管制標準及實際量測。</div>
+    </div>
+    <div class="db-chart">
+      <div class="db-row"><b>20–40</b><div><i style="--w:28%"></i></div><span>樹林風吹／安靜環境</span><em>🌿</em></div>
+      <div class="db-row"><b>40–65</b><div><i style="--w:45%"></i></div><span>一般談話／學習環境</span><em>💬</em></div>
+      <div class="db-row"><b>70–90</b><div><i style="--w:63%"></i></div><span>擴音設備／繁忙道路</span><em>📢</em></div>
+      <div class="db-row"><b>80–110</b><div><i style="--w:78%"></i></div><span>營建工地</span><em>🏗️</em></div>
+      <div class="db-row"><b>110–130</b><div><i style="--w:93%"></i></div><span>飛機起降附近</span><em>✈️</em></div>
+    </div>
+  </div>
+</section>
+
+<section class="rules" id="rules">
+  <div class="wrap">
+    <div class="title center light"><span>新北市管制提醒</span><h2>晚上 10 點後，更要注意生活安寧</h2><p>新北市 2026 年 3 月 5 日起施行的公告，依噪音管制區類別與行為訂有不同限制。</p></div>
+    <div class="rule-grid">
+      <article><div class="clock">22:00<br><small>↓</small><br>08:00</div><h3>夜間特別注意</h3><p>全市各類噪音管制區內，晚上 10 時至翌日上午 8 時，部分行為不得妨害他人生活安寧。</p></article>
+      <article><div class="rule-emoji">🎆</div><h3>爆竹煙火</h3><p>夜間有相關限制；特定節慶例外仍以公告內容為準。</p></article>
+      <article><div class="rule-emoji">📣</div><h3>室外擴音設施</h3><p>夜間不得任意使用致妨害他人安寧，公務、公共安全等情形另有例外。</p></article>
+      <article><div class="rule-emoji">🏠</div><h3>住宅區更敏感</h3><p>第一類、第二類噪音管制區對部分行為的夜間限制更嚴格。</p></article>
+    </div>
+    <a class="official-link" href="https://www.epd.ntpc.gov.tw/Announcement/ncn" target="_blank" rel="noopener">查看新北市最新噪音管制公告 ↗</a>
+  </div>
+</section>
+
+<section class="complaint" id="complaint">
+  <div class="wrap complaint-grid">
+    <div class="complaint-art">
+      <svg viewBox="0 0 520 430" role="img" aria-label="Q版民眾使用手機進行噪音陳情">
+        <rect width="520" height="430" rx="38" fill="#EAF6F3"/>
+        <circle cx="390" cy="86" r="47" fill="#FFE39A"/>
+        <g transform="translate(105 70)">
+          <circle cx="120" cy="72" r="56" fill="#FFD1B1"/>
+          <path d="M70 67C79 18 145 8 174 55C149 42 110 43 70 67Z" fill="#293F49"/>
+          <circle cx="104" cy="77" r="6" fill="#293F49"/><circle cx="135" cy="77" r="6" fill="#293F49"/>
+          <path d="M108 96c8 8 17 8 25 0" stroke="#B66054" stroke-width="5" fill="none" stroke-linecap="round"/>
+          <rect x="74" y="130" width="98" height="155" rx="34" fill="#4E9DC2"/>
+          <path d="M78 163L30 224" stroke="#FFD1B1" stroke-width="22" stroke-linecap="round"/>
+          <path d="M168 163l54 42" stroke="#FFD1B1" stroke-width="22" stroke-linecap="round"/>
+          <rect x="209" y="154" width="72" height="123" rx="14" fill="#173E48"/>
+          <rect x="218" y="166" width="54" height="83" rx="8" fill="#DFF4EF"/>
+          <circle cx="245" cy="264" r="7" fill="#C4DDD6"/>
+          <path d="M231 204c8-10 18-10 26 0M226 219c11-13 28-13 39 0" stroke="#E7903C" stroke-width="6" fill="none" stroke-linecap="round"/>
+        </g>
+        <g transform="translate(330 245)">
+          <path d="M30 90C8 90-5 76 0 57C5 41 19 34 35 37C38 17 53 5 72 5C91 5 105 17 109 33C126 29 143 40 147 57C151 76 138 90 118 90H30Z" fill="#fff" stroke="#C8E5DE" stroke-width="3"/>
+          <circle cx="52" cy="59" r="5" fill="#173E48"/><circle cx="92" cy="59" r="5" fill="#173E48"/>
+          <path d="M61 72c7 7 15 7 22 0" stroke="#168B78" stroke-width="4" fill="none" stroke-linecap="round"/>
+        </g>
+      </svg>
+    </div>
+    <div class="complaint-copy">
+      <div class="title"><span>我要反映噪音</span><h2>陳情時，資訊越完整越好處理</h2></div>
+      <p>如果噪音持續影響生活，可以使用新北市或全國公害陳情管道。留下聯絡方式，有助於稽查人員確認位置、量測或回覆結果。</p>
+      <div class="complaint-list">
+        <a href="tel:1999"><span>☎️</span><div><b>1999</b><small>新北市民專線</small></div></a>
+        <a href="tel:0800066666"><span>📞</span><div><b>0800-066666</b><small>全國公害陳情電話</small></div></a>
+        <a href="https://www.epd.ntpc.gov.tw/StaticPage/complaint-handling" target="_blank" rel="noopener"><span>💻</span><div><b>線上陳情</b><small>查看完整陳情方式與流程</small></div></a>
+      </div>
+      <div class="remember"><b>建議先記：</b>發生時間、地點、噪音來源、持續多久、是否反覆發生。</div>
+    </div>
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <div class="wrap faq-grid">
+    <div class="title"><span>FAQ</span><h2>常見問題</h2><p>點一下即可查看簡單答案。</p></div>
+    <div class="faq-list">
+      <details open><summary>覺得很吵，就一定代表違反噪音管制法嗎？</summary><p>不一定。噪音管制涉及聲音來源、時間、管制區類別、量測方式與管制標準；有些近鄰噪音也可能依其他規定處理。</p></details>
+      <details><summary>冷氣機或馬達很吵，可以陳情嗎？</summary><p>可以。新北市公告列有空調系統、冷卻水塔、抽水馬達、抽排風機、發電機等設施，聲音不得超過相關噪音管制標準。</p></details>
+      <details><summary>施工晚上還在鑽牆，可以反映嗎？</summary><p>可以先記錄時間、地點與施工來源，再透過 1999 或公害陳情管道反映；是否違規由主管機關依現場情況及適用規定判定。</p></details>
+      <details><summary>改裝排氣管很大聲怎麼辦？</summary><p>使用未經主管機關審驗或檢驗合格排氣管的車輛，可能涉及噪音管制規定。可記錄車號、時間與地點後透過相關陳情管道反映。</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="official">
+  <div class="wrap official-card">
+    <div class="official-icon">📘</div>
+    <div><span>OFFICIAL INFORMATION</span><h2>正式規定請以新北市政府環保局最新公告為準</h2><p>本頁為民眾易讀網站範本，法規、管制區、限制時間及裁罰規定可能調整。</p></div>
+    <a class="btn primary" href="https://www.epd.ntpc.gov.tw/StaticPage/noiseregstd" target="_blank" rel="noopener">查看法規／標準 ↗</a>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap footer-grid">
+    <div><b>新北市噪音防制資訊專區</b><p>多一點體諒，少一點噪音，一起維護生活安寧。</p></div>
+    <a href="#home">回到最上面 ↑</a>
+  </div>
+  <div class="wrap footer-note">【本頁為網站範本，正式發布前請更新聯絡方式及公告內容。】</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
